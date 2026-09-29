@@ -5,8 +5,8 @@ export default function Login() {
   const router = useRouter()
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen animated-bg text-black">
-      <h1 className="text-8xl font-extrabold mb-4 tracking-wide">altok</h1>
+    <main className="flex flex-col items-center justify-center min-h-screen animated-bg text-white">
+      <h1 className="text-8xl font-extrabold mb-4 tracking-wide">Altok</h1>
 
       <h2 className="text-xl mb-4">¿Eres Cliente, Emprendedor o Proveedor?</h2>
 

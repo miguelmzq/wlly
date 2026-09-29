@@ -19,11 +19,11 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen animated-bg text-black">
-      <h1 className="text-8xl font-extrabold mb-4 tracking-wide">
+      <h1 className="text-8xl font-extrabold mb-4 tracking-wide text-black">
         {text}
       </h1>
-      <p className="text-2xl italic mb-8">
-        "Si lo sueñas, crea, empieza y conecta al toque"
+      <p className="text-2xl italic mb-8 text-black">
+        "Cotiza, Vende, Conecta al toque"
       </p>
 
       <button
