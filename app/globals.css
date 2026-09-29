@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000; /* negro absoluto */
-  --foreground: #ededed;
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 @theme inline {
@@ -10,6 +10,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
 body {
@@ -20,19 +27,15 @@ body {
   padding: 0;
 }
 
-/* 🎶 Fondo animado estilo disco */
+/* 🎨 Fondo animado degradado */
 @keyframes gradientMove {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
 .animated-bg {
-  background: linear-gradient(-45deg,
-    #000000,   /* negro absoluto */
-    #0a008f,   /* azul oscuro eléctrico */
-    #6d28d9    /* morado intenso */
-  );
-  background-size: 200% 200%;
-  animation: gradientMove 20s ease infinite; /* va y vuelve en 20s */
+  background: linear-gradient(-65deg, #bfdbfe, #93c5fd, #fbedb0, #fde68a);
+  background-size: 180% 180%;
+  animation: gradientMove 17s ease infinite;
 }
